@@ -7,7 +7,7 @@ public class search : MonoBehaviour
 {
     public bool isclose;
     public bool opened;
-    public GameObject gameObject;
+    public GameObject gruz;
     public Animator animator;
     // Start is called before the first frame update
 
@@ -15,7 +15,7 @@ public class search : MonoBehaviour
     {
         if ((isclose == true) && (Input.GetKeyDown(KeyCode.E)) && (opened == false))
         {
-            Destroy(gameObject);
+            Destroy(gruz);
             animator.SetBool("Wypadnij", true);
         }
     }
