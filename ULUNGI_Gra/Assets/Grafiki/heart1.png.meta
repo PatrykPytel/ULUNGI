@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d97fcf8866b8cd046ba2ce4b1045c715
-=======
-guid: c834f65d0bde44642bfe5fd5bd2447fc
->>>>>>> c539966fb390a27125548db8026c7efef08e3a5d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,15 +39,11 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> c539966fb390a27125548db8026c7efef08e3a5d
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,24 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-=======
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -137,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c8f098ff8a304f4bb2731921925873c
-      internalID: 1538815919
+      spriteID: ad27cf23816e8f94baef8680759f9363
+      internalID: 335481794
       vertices: []
       indices: 
       edges: []
@@ -158,30 +132,25 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4235db4b4ef0ba242ab1767a7de06633
-      internalID: 1269010301
+      spriteID: 60e17b036bf547a42b9c0a725f4308de
+      internalID: 1446638295
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> c539966fb390a27125548db8026c7efef08e3a5d
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 27de3317c78f48a49b7d61351abd1b0f
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< HEAD
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      heart1_0: 1538815919
-      heart1_1: 1269010301
->>>>>>> c539966fb390a27125548db8026c7efef08e3a5d
+      heart1_0: 335481794
+      heart1_1: 1446638295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
