@@ -11,7 +11,8 @@ public class point : MonoBehaviour
 
     void Start()
     {
-        
+        scoreText.text = score.ToString() + "POINTS";
+        highscoreText.text = "HIGHSCORE: " + highscore.ToString();
     }
 
     // Update is called once per frame
