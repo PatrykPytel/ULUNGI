@@ -10,7 +10,7 @@ public class Teleport : MonoBehaviour
     public GameObject teleport;
     public Animator animator;// Start is called before the first frame update
     private bool isclose;
-    private bool old = true;
+    public bool old = true;
 
 
     // Update is called once per frame
