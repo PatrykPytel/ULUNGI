@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 
-public class Isclose1 : MonoBehaviour
+public class Isclose2 : MonoBehaviour
 {
-    public bool isclose;
+    public bool isclose2;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +21,14 @@ public class Isclose1 : MonoBehaviour
     {
         if (coll.CompareTag("Player"))
         {
-            isclose = true;
+            isclose2 = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            isclose = false;
+            isclose2 = false;
         }
     }
 }
