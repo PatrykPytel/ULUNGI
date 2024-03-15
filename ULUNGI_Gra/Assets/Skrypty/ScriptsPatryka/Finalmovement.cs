@@ -93,13 +93,13 @@ public class Finalmovement : MonoBehaviour
 			player.transform.localScale = theScale;			
 		}
 	}
-    void stopdash()
-    {
-        runSpeed = runSpeed/mnoznikspeed;
-        animator.SetBool("Isdashing", false);
+  //  void stopdash()
+   // {
+      //  runSpeed = runSpeed/mnoznikspeed;
+    //    animator.SetBool("Isdashing", false);
  //       animator.SetBool("IsJumping",true);
 
-    }
+  //  }
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
@@ -127,19 +127,19 @@ public class Finalmovement : MonoBehaviour
 		if (Input.GetButtonUp("Jump") && rb.velocity.y >0f) { 
 			rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
 		}
-        if (timepassed <= 0) {  
-            if(Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                timepassed =cooldown;
-                animator.SetBool("Isdashing", true);
-                animator.SetBool("IsJumping", false);
-                runSpeed = runSpeed * mnoznikspeed;
-            	Invoke("stopdash", dashtime);   
-            } 
-        }
-        else { 
-            timepassed -= Time.deltaTime;
-        }
+      //  if (timepassed <= 0) {  
+          //  if(Input.GetKeyDown(KeyCode.LeftShift))
+          //  {
+          //      timepassed =cooldown;
+           //     animator.SetBool("Isdashing", true);
+           //     animator.SetBool("IsJumping", false);
+           //     runSpeed = runSpeed * mnoznikspeed;
+            //	Invoke("stopdash", dashtime);   
+          //  } 
+      //  }
+       // else { 
+       //     timepassed -= Time.deltaTime;
+      //  }
 		WallSlide();
 		WallJump();
 		if (!isWallJumping && noconstrains == true) { 
