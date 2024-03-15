@@ -12,7 +12,8 @@ public class Slowtime : MonoBehaviour
  //   public Transform target;
     Finalmovement move;
     Rigidbody2D rb;
-    private bool timeslowed = false;
+    public bool timeslowed = false;
+    public bool timefast = false;
    // Image Background;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class Slowtime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cooldown -= Time.deltaTime; 
+        //cooldown -= Time.deltaTime; 
       //  if(cooldown <= 0 && timeslowed && move.m_Grounded)
       //  {
         //    Time.timeScale = 1f;
@@ -34,9 +35,9 @@ public class Slowtime : MonoBehaviour
        //     timeslowed = false ;
             //Background.color = new Color(0,0,0,0f);
       //  }
-        if(Input.GetKeyUp(KeyCode.Q) && timeslowed==false) {
+        if(Input.GetKeyDown(KeyCode.Q) && timeslowed==false) {
             Time.timeScale = 0.5f;
-            cooldown = 10;
+       //     cooldown = 10;
           //  transform.position = target.position;
             move.runSpeed = move.doublespeed;
             move.rb.gravityScale = 2f;
@@ -49,7 +50,24 @@ public class Slowtime : MonoBehaviour
             move.rb.gravityScale = 1f;
             timeslowed = false;
         }
-    }
+        if (Input.GetKeyDown(KeyCode.R) && timefast == false)
+        {
+            Time.timeScale = 2f;
+          //  cooldown = 10;
+          //  transform.position = target.position;
+            move.runSpeed = move.doublespeed;
+            move.rb.gravityScale = 2f;
+            move.m_JumpForce = move.slowedjumpforce;
+            timefast = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.R) && timefast == true)
+        {
+            Time.timeScale = 1f;
+            move.runSpeed = move.startspeed;
+            move.m_JumpForce = move.startjumpforce;
+            move.rb.gravityScale = 1f;
+            timefast = false;
+        }
   //  private void //OnTriggerEnter2D(Collider2D collision)
   //  {
       //  if(collision.tag == "Player")
@@ -63,5 +81,5 @@ public class Slowtime : MonoBehaviour
     //   / // /   timeslowed = true;
           //  Background.color = new Color(0,0,1,0.5f);
      //   }
-    //}
+    }
 }
