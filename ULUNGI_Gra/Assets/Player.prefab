@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5587718875471017832}
   - component: {fileID: 7650005004439788688}
   - component: {fileID: 5202892356711266722}
+  - component: {fileID: 888008182086970268}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -165,9 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bd8c631ede295478f3fe5f55363a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 20
-  startjumpforce: 20
-  slowedjumpforce: 40
+  m_JumpForce: 7
+  startjumpforce: 7
+  slowedjumpforce: 10
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -180,13 +181,13 @@ MonoBehaviour:
   player: {fileID: 2776437543232147727}
   m_Grounded: 0
   animator: {fileID: 7650005004439788688}
-  runSpeed: 10
+  runSpeed: 5
   playerscale: 1
   dashtime: 0.5
   cooldown: 2
   mnoznikspeed: 5
-  startspeed: 10
-  doublespeed: 20
+  startspeed: 5
+  doublespeed: 10
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -227,6 +228,20 @@ MonoBehaviour:
   currentHealth: 0
   iframeDuration: 0.5
   numberOfFlashes: 1
+--- !u!114 &888008182086970268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2776437543232147727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd861275e6f8b84c86c5ace2bd56cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeslowed: 0
+  timefast: 0
 --- !u!1 &3640938703797816826
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +267,7 @@ Transform:
   m_GameObject: {fileID: 3640938703797816826}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.119, z: 0}
+  m_LocalPosition: {x: 0, y: -0.169, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

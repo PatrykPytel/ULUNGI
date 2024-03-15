@@ -9,7 +9,7 @@ public class Teleport : MonoBehaviour
     public Transform oldtarget;
     public GameObject teleport;
     public Animator animator;// Start is called before the first frame update
-    private bool isclose;
+    public bool isclose;
     public bool old = true;
 
 
