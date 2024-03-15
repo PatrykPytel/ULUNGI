@@ -61,7 +61,7 @@ public class DialogMenadzer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.N) && isActive == true)  { 
+        if(Input.GetKeyDown(KeyCode.Return) && isActive == true)  { 
             NextMessage();
         }
     }
