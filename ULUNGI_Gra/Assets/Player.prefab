@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3031686526927132141}
   - component: {fileID: 5587718875471017832}
   - component: {fileID: 7650005004439788688}
+  - component: {fileID: 5202892356711266722}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -76,9 +77,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 775503677
+  m_SortingLayer: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -210,6 +211,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5202892356711266722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2776437543232147727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8f2e60128eb7f4c8e96b43c50f7eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  currentHealth: 0
+  iframeDuration: 0.5
+  numberOfFlashes: 1
 --- !u!1 &3640938703797816826
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,7 +31,7 @@ public class Finalmovement : MonoBehaviour
 	private float wallJumpingTime =0.2f;
 	private float wallJumpingCounter;
 	private float wallJumpingDuration = 0.4f;
-	private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+	private Vector2 wallJumpingPower = new Vector2(5f, 7f);
 	private bool noconstrains = true;
 	public int playerscale=1;
 
