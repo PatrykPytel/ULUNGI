@@ -39,7 +39,7 @@ public class health : MonoBehaviour
                 if(GetComponent<movement>() != null)
                     GetComponent<movement>().enabled = false;
                 dead = true;
-                FindObjectOfType<GameManager>().EndGame();
+               // FindObjectOfType<GameManager>().EndGame();
             }
         }
     }
