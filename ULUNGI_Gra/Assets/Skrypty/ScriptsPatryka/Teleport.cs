@@ -9,8 +9,11 @@ public class Teleport : MonoBehaviour
     public Transform oldtarget;
     public GameObject teleport;
     public Animator animator;// Start is called before the first frame update
-    private bool isclose;
+  //  public bool isclose;
     public bool old = true;
+    [SerializeField] private Isclose1 isclose;
+    [SerializeField] private Isclose2 isclose2;
+    // [SerializeField] private Isclosenew isclose;
 
 
     // Update is called once per frame
@@ -18,7 +21,7 @@ public class Teleport : MonoBehaviour
 
     void Update()
     {
-        if ((isclose == true) && (Input.GetKeyDown(KeyCode.E)))
+        if ((Input.GetKeyDown(KeyCode.E)) && (isclose2.isclose2==true || isclose.isclose == true))
         {
             if (old)
             {
@@ -34,18 +37,5 @@ public class Teleport : MonoBehaviour
             }
         }
     }
-    private void OnTriggerEnter2D(Collider2D coll)
-    {
-        if (coll.CompareTag("Player"))
-        {
-            isclose = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            isclose = false;
-        }
-    }
+
 }
