@@ -10,7 +10,7 @@ public class Slowtime : MonoBehaviour
 {
     private float cooldown;
  //   public Transform target;
-    Finalmovement move;
+    [SerializeField] private Finalmovement move;
     Rigidbody2D rb;
     public bool timeslowed = false;
     public bool timefast = false;
@@ -19,7 +19,7 @@ public class Slowtime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        move= GameObject.Find("Player").GetComponent<Finalmovement>();
+      //  move= GameObject.Find("Player").GetComponent<Finalmovement>();
       //  Background = GameObject.Find("Background").GetComponent<Image>();
     }
 
