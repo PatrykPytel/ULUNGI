@@ -284,7 +284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &258322688
 RectTransform:
   m_ObjectHideFlags: 0
@@ -424,7 +424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &310648715
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1194,7 +1194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -557, y: 219}
+  m_AnchoredPosition: {x: -557, y: 188}
   m_SizeDelta: {x: 357.0273, y: 47.527206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825693887
@@ -1233,7 +1233,10 @@ MonoBehaviour:
     HOLD Q -  SLOW DOWN
 
 
-    HOLD R - SPEED UP'
+    HOLD R - SPEED UP
+
+
+    E - TELEPORT'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ed344a19d2a8f4a4a8c539736ee55fec, type: 2}
   m_sharedMaterial: {fileID: -8287898741926522942, guid: ed344a19d2a8f4a4a8c539736ee55fec, type: 2}
@@ -1260,8 +1263,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
