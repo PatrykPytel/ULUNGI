@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5202892356711266722}
   - component: {fileID: 888008182086970268}
   - component: {fileID: 6351929622481665796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player - Copy
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -152,8 +152,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.002241177, y: -0.009523521}
-  m_Size: {x: 0.15069231, y: 0.32063118}
+  m_Offset: {x: -0.002241177, y: -0.004680925}
+  m_Size: {x: 0.15069231, y: 0.3109461}
   m_Direction: 0
 --- !u!114 &5587718875471017832
 MonoBehaviour:
@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5799912337613948809}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6025667403309278118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

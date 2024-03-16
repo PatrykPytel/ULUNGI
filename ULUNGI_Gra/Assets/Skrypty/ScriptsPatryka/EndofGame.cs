@@ -8,13 +8,17 @@ public class EndofGame : MonoBehaviour
 {
     [SerializeField] private Healthmanager Zycie;
     public static bool YouDied = false;
-    public GameObject GameOverUI; 
-    public GameObject ItemUI;
-    [SerializeField] private Openchest skrzynia; 
+    public GameObject GameOverUI;
+    // public GameObject ItemUI;
+    //   [SerializeField] private Openchest skrzynia; 
 
     // Start is called before the first frame update
 
     // Update is called once per frame
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
     void Update()
     {
         if (Zycie.health==0)
@@ -22,22 +26,15 @@ public class EndofGame : MonoBehaviour
             Pause();
             
         }
-        if(skrzynia.opened==true)
-       {
-            Chestopened();     
-       }else {
-        Closethechest();
-       }
+        //if(skrzynia.opened==true)
+     //  {
+       //     Chestopened();     
+     //  }else {
+       // Closethechest();
+      // }
 
     }
-    void Resume()
-    {
-        GameOverUI.SetActive(false);
-        Time.timeScale = 1f;
-        YouDied = false;
 
-
-    }
     void Pause()
     {
         GameOverUI.SetActive(true);
@@ -45,19 +42,26 @@ public class EndofGame : MonoBehaviour
         YouDied = true;
 
     }
-    void Chestopened() {
-        ItemUI.SetActive(true);
+   // void Chestopened() {
+    //    ItemUI.SetActive(true);
 
-    } 
-    public void Closethechest() { 
-        ItemUI.SetActive(false);
-    }
+  //  } 
+   // public void Closethechest() { 
+      //  ItemUI.SetActive(false);
+   // }
     public void LoadMenu()
     {
         SceneManager.LoadScene("MainMenu");
         
 
     }
-    
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameOverUI.SetActive(false);
+        Time.timeScale = 1f;
+        YouDied = false;
+    }
+
 }
 
