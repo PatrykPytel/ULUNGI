@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8816189944042235101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4955422060327514044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.119, z: 0}
+  m_LocalPosition: {x: 0, y: -0.175, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2859510417483753847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 5925220660131876984}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0, z: 0}
+  m_LocalPosition: {x: 0.089, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77,7 +77,8 @@ GameObject:
   - component: {fileID: 2528603447365767520}
   - component: {fileID: 415655773530353982}
   - component: {fileID: 5920320269096072030}
-  m_Layer: 0
+  - component: {fileID: 7954368768651544252}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -212,8 +213,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.2, y: 0.2}
+  m_Offset: {x: 0.006679583, y: -0.012404919}
+  m_Size: {x: 0.11411963, y: 0.30878186}
   m_Direction: 0
 --- !u!114 &2528603447365767520
 MonoBehaviour:
@@ -227,9 +228,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bd8c631ede295478f3fe5f55363a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 20
-  startjumpforce: 20
-  slowedjumpforce: 40
+  m_JumpForce: 7
+  startjumpforce: 7
+  slowedjumpforce: 10
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -242,16 +243,28 @@ MonoBehaviour:
   player: {fileID: 8365213043888917592}
   m_Grounded: 0
   animator: {fileID: 415655773530353982}
-  runSpeed: 10
+  runSpeed: 5
   playerscale: 1
   dashtime: 0.5
   cooldown: 2
   mnoznikspeed: 5
-  startspeed: 10
-  doublespeed: 20
+  startspeed: 5
+  doublespeed: 10
   OnLandEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2528603447365767520}
+        m_TargetAssemblyTypeName: Finalmovement, Assembly-CSharp
+        m_MethodName: OnLanding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &415655773530353982
 Animator:
   serializedVersion: 5
@@ -289,3 +302,16 @@ MonoBehaviour:
   currentHealth: 0
   iframeDuration: 0.5
   numberOfFlashes: 1
+--- !u!114 &7954368768651544252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8365213043888917592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb4dbbd6a38c5c4e9c8bb75b16f510f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cm: {fileID: 0}
