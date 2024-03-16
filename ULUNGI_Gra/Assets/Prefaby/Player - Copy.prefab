@@ -277,8 +277,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  pelneserce: {fileID: 1446638295, guid: d97fcf8866b8cd046ba2ce4b1045c715, type: 3}
-  pusteserce: {fileID: 335481794, guid: d97fcf8866b8cd046ba2ce4b1045c715, type: 3}
+  pelneserce: {fileID: 1429322235, guid: 11b00574879191e40b5858b63d064566, type: 3}
+  pusteserce: {fileID: 21300000, guid: 16453d7c9743faf45a7730a8a89bfbf2, type: 3}
   enemyIsClose: 0
   points: 0
   niesmiertelnosc: 1
