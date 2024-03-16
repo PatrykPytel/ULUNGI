@@ -5,6 +5,9 @@ using UnityEngine.SocialPlatforms;
 
 public class Teleport : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip newClip;
+    public AudioClip oldClip;
     public Transform target;
     public Transform oldtarget;
     public GameObject teleport;
@@ -28,12 +31,16 @@ public class Teleport : MonoBehaviour
                 animator.SetBool("Teleport", true);
                 old = false;
                 teleport.transform.position = target.position;
+                audioSource.clip = newClip;
+                audioSource.Play();
             }
             else if (old == false)
             {
                 animator.SetBool("Teleport", false);
                 old = true;
                 teleport.transform.position = oldtarget.position;
+                audioSource.clip = oldClip;
+                audioSource.Play();
             }
         }
     }
