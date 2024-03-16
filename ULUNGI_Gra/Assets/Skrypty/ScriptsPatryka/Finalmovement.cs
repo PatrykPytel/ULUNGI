@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 public class Finalmovement : MonoBehaviour
 {
-    public AudioClip skokClip;
     public float m_JumpForce = 20f;
 	public float startjumpforce = 20f;
 	public float slowedjumpforce = 40f;// Amount of force added when the player jumps.
@@ -123,6 +122,7 @@ public class Finalmovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         horizontalMove = Input.GetAxisRaw("Horizontal");
+		if (horizontalMove != 0)
         if (Input.GetButtonDown("Jump") && m_Grounded && noconstrains == true)
         {
 			CreateDust() ;
