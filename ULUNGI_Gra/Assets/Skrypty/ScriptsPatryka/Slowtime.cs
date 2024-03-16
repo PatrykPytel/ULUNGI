@@ -50,24 +50,6 @@ public class Slowtime : MonoBehaviour
             move.rb.gravityScale = 1f;
             timeslowed = false;
         }
-        if (Input.GetKeyDown(KeyCode.R) && timefast == false)
-        {
-            Time.timeScale = 2f;
-          //  cooldown = 10;
-          //  transform.position = target.position;
-            move.runSpeed = move.doublespeed;
-            move.rb.gravityScale = 2f;
-            move.m_JumpForce = move.slowedjumpforce;
-            timefast = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.R) && timefast == true)
-        {
-            Time.timeScale = 1f;
-            move.runSpeed = move.startspeed;
-            move.m_JumpForce = move.startjumpforce;
-            move.rb.gravityScale = 1f;
-            timefast = false;
-        }
   //  private void //OnTriggerEnter2D(Collider2D collision)
   //  {
       //  if(collision.tag == "Player")
