@@ -5134,7 +5134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   currentHealth: 0
-  iframeDuration: 0.5
+  iframeDuration: 2
   numberOfFlashes: 1
 --- !u!114 &2121641481775247881
 MonoBehaviour:
@@ -5148,6 +5148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffd861275e6f8b84c86c5ace2bd56cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move: {fileID: 8056335066663398451}
   timeslowed: 0
   timefast: 0
   Panel: {fileID: 0}
@@ -5174,7 +5175,7 @@ MonoBehaviour:
   pusteserce: {fileID: 21300000, guid: 16453d7c9743faf45a7730a8a89bfbf2, type: 3}
   enemyIsClose: 0
   points: 0
-  niesmiertelnosc: 1
+  niesmiertelnosc: 2
   lflashy: 3
   damage: 1
   thorndmg: 3
