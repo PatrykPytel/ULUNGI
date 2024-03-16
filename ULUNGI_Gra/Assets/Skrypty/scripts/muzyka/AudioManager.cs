@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-        Play("theme");
+        Play("sonudtrack_menu_gowno(1)");
     }
     public void Play (string name)
     {
