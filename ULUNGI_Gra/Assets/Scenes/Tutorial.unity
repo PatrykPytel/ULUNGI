@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 1308625165}
   - component: {fileID: 1308625164}
   - component: {fileID: 1308625163}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Podloga2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8625,7 +8625,7 @@ GameObject:
   - component: {fileID: 1787514240}
   - component: {fileID: 1787514239}
   - component: {fileID: 1787514238}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Podloga1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16781,18 +16781,6 @@ PrefabInstance:
     - target: {fileID: 2776437543232147727, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2776437543232147727, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3640938703797816826, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097496239907883298, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6790766901906685794, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
       propertyPath: m_LocalPosition.x
