@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    [SerializeField] private AudioSource Level_terazniejszosc_gogogo;
-    [SerializeField] private AudioSource sonudtrack_menu_gowno;
     public static bool GameisPaused = false;
     public GameObject PauseMenuUI;
     private void Update()
@@ -34,7 +32,6 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("resume");
         Time.timeScale = 1f;
         GameisPaused = false;
-        Level_terazniejszosc_gogogo.Play();
     }
 
     void Pause()
@@ -42,14 +39,12 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameisPaused = true;
-        sonudtrack_menu_gowno.Play();
     }
     public void LoadMenu()
     {
         Time.timeScale = 1f;
         Debug.Log("Loading menu...");
         SceneManager.LoadScene("MainMenu");
-        sonudtrack_menu_gowno.Play();
     }  
     public void QuitGame()
     {
