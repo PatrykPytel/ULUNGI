@@ -66,6 +66,9 @@ public class Healthmanager : MonoBehaviour
         {
             TakeDamage(damage);
            // CameraShake.Myinstance.StartCoroutine(CameraShake.Myinstance.Shake());
+        }else if(collision.tag=="EvilPlant")  { 
+            TakeDamage(thorndmg);
+           // CameraShake.Myinstance.StartCoroutine(CameraShake.Myinstance.Shake());
         }
     }
     private IEnumerator Niesmiertelnosc()
