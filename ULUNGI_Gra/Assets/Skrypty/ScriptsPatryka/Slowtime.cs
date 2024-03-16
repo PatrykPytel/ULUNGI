@@ -14,7 +14,8 @@ public class Slowtime : MonoBehaviour
     Rigidbody2D rb;
     public bool timeslowed = false;
     public bool timefast = false;
-   // Image Background;
+    public GameObject Panel;
+    // Image Background;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,12 +44,14 @@ public class Slowtime : MonoBehaviour
             move.rb.gravityScale = 2f;
             move.m_JumpForce = move.slowedjumpforce;
             timeslowed = true;
+            Panel.SetActive(true);
         }else if(Input.GetKeyUp(KeyCode.Q) && timeslowed==true) {
             Time.timeScale = 1f;
             move.runSpeed = move.startspeed;
             move.m_JumpForce = move.startjumpforce;
             move.rb.gravityScale = 1f;
             timeslowed = false;
+            Panel.SetActive(false);
         }
   //  private void //OnTriggerEnter2D(Collider2D collision)
   //  {
