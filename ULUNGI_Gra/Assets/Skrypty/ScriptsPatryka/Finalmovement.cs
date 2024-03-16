@@ -122,7 +122,8 @@ public class Finalmovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         horizontalMove = Input.GetAxisRaw("Horizontal");
-        if(Input.GetButtonDown("Jump") && m_Grounded && noconstrains == true)
+		if (horizontalMove != 0)
+        if (Input.GetButtonDown("Jump") && m_Grounded && noconstrains == true)
         {
 			CreateDust() ;
             rb.velocity = new Vector2(rb.velocity.x, m_JumpForce);
