@@ -24,7 +24,7 @@ public class Healthmanager : MonoBehaviour
     {
         maxHealth = health;
         spriteRend = GetComponent<SpriteRenderer>();
-        Background = GameObject.Find("Background").GetComponent<Image>();
+      //  Background = GameObject.Find("Background").GetComponent<Image>();
 
     }
     private void Awake()
@@ -65,10 +65,10 @@ public class Healthmanager : MonoBehaviour
         if (collision.tag=="Enemy")
         {
             TakeDamage(damage);
-            CameraShake.Myinstance.StartCoroutine(CameraShake.Myinstance.Shake());
+           // CameraShake.Myinstance.StartCoroutine(CameraShake.Myinstance.Shake());
         }else if(collision.tag=="EvilPlant")  { 
             TakeDamage(thorndmg);
-            CameraShake.Myinstance.StartCoroutine(CameraShake.Myinstance.Shake());
+           // CameraShake.Myinstance.StartCoroutine(CameraShake.Myinstance.Shake());
         }
     }
     private IEnumerator Niesmiertelnosc()
@@ -77,11 +77,11 @@ public class Healthmanager : MonoBehaviour
         for(int i =0; i<lflashy; i++)
         {
             spriteRend.color= new Color(1,0,0,0.5f);
-            Background.color= new Color(1,0,0,0.5f);//Color.grey;
+           // Background.color= new Color(1,0,0,0.5f);//Color.grey;
             yield return new WaitForSeconds(niesmiertelnosc/(lflashy*2 ));
             spriteRend.color = Color.white;
             //Background.color = new Color.(0,0,0,0f);
-            Background.color = new Color(0, 0, 0, 0f);
+           // Background.color = new Color(0, 0, 0, 0f);
             yield return new WaitForSeconds(niesmiertelnosc/(lflashy*2 ));
         }
         Physics2D.IgnoreLayerCollision(10,11, false);
