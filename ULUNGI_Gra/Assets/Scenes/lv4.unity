@@ -136,14 +136,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6351929622481665796, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
-      propertyPath: pelneserce
-      value: 
-      objectReference: {fileID: -1129682668, guid: 11b00574879191e40b5858b63d064566, type: 3}
-    - target: {fileID: 6351929622481665796, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
-      propertyPath: pusteserce
-      value: 
-      objectReference: {fileID: 335481794, guid: d97fcf8866b8cd046ba2ce4b1045c715, type: 3}
-    - target: {fileID: 6351929622481665796, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 2138833337}
@@ -197,10 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6790766901906685794, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1903665690}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
 --- !u!1 &197621919 stripped
@@ -224,11 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fa6a888e37f1e479dc0d1c93c4cd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &197621929 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6790766901906685794, guid: 90a665e114d53c74c9c1716500a13f00, type: 3}
-  m_PrefabInstance: {fileID: 20639316}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &601690823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,11 +1638,11 @@ Transform:
   m_GameObject: {fileID: 1903665687}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.41}
-  m_LocalScale: {x: 0.23339404, y: 1, z: 1}
+  m_LocalPosition: {x: -2.41, y: -2.62, z: -0.37284535}
+  m_LocalScale: {x: 1, y: 6.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 197621929}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912082231
 GameObject:
@@ -2570,6 +2554,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1903665690}
   - {fileID: 20639316}
   - {fileID: 1343786861}
   - {fileID: 1823516198}
