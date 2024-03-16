@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7650005004439788688}
   - component: {fileID: 5202892356711266722}
   - component: {fileID: 888008182086970268}
+  - component: {fileID: 6351929622481665796}
   m_Layer: 0
   m_Name: Player - Copy
   m_TagString: Player
@@ -254,6 +255,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeslowed: 0
   timefast: 0
+--- !u!114 &6351929622481665796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2776437543232147727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fa6a888e37f1e479dc0d1c93c4cd89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PoczatkoweZycie: 3
+  health: 3
+  maxHealth: 0
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pelneserce: {fileID: 1446638295, guid: d97fcf8866b8cd046ba2ce4b1045c715, type: 3}
+  pusteserce: {fileID: 335481794, guid: d97fcf8866b8cd046ba2ce4b1045c715, type: 3}
+  enemyIsClose: 0
+  points: 0
+  niesmiertelnosc: 1
+  lflashy: 3
+  damage: 1
+  thorndmg: 3
 --- !u!1 &3640938703797816826
 GameObject:
   m_ObjectHideFlags: 0
