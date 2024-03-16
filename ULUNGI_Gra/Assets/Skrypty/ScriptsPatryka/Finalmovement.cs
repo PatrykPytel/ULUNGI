@@ -46,6 +46,8 @@ public class Finalmovement : MonoBehaviour
     public float startspeed;
 	public float doublespeed;
 
+	public ParticleSystem dust;
+
     // Start is called before the first frame update
     [Header("Events")]
 	[Space]
@@ -90,7 +92,8 @@ public class Finalmovement : MonoBehaviour
 			Vector3 theScale = player.transform.localScale;  	// Multiply the player's x local scale by -1.
 			theScale.x *= -1;
 			playerscale *= -1;
-			player.transform.localScale = theScale;			
+			player.transform.localScale = theScale;
+			CreateDust();
 		}
 	}
   //  void stopdash()
@@ -121,6 +124,7 @@ public class Finalmovement : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal");
         if(Input.GetButtonDown("Jump") && m_Grounded && noconstrains == true)
         {
+			CreateDust() ;
             rb.velocity = new Vector2(rb.velocity.x, m_JumpForce);
             animator.SetBool("IsJumping",true);
         } 
@@ -196,5 +200,9 @@ public class Finalmovement : MonoBehaviour
 		rb.constraints = RigidbodyConstraints2D.None;
 		rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 	 	noconstrains = true;
+	}
+	void CreateDust()
+	{
+		dust.Play();
 	}
 }
