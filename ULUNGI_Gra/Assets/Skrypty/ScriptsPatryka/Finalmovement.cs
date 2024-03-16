@@ -113,9 +113,9 @@ public class Finalmovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(DialogMenadzer.isActive == true) { 
-			return;
-		}
+	//	if(DialogMenadzer.isActive == true) { 
+	//		return;
+	//	}
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         horizontalMove = Input.GetAxisRaw("Horizontal");
