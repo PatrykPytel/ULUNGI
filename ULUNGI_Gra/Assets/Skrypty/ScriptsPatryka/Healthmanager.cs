@@ -18,7 +18,7 @@ public class Healthmanager : MonoBehaviour
     [SerializeField] private float damage;
     [SerializeField] private float thorndmg;
     private SpriteRenderer spriteRend;
-    Image Background;
+  //  Image Background;
     
     void Start()
     {
