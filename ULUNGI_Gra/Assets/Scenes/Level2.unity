@@ -3020,7 +3020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005834822453794743, guid: 5648db515d7a6ba4ebd952690b1dcb7e, type: 3}
       propertyPath: m_Name
-      value: score point canvas
+      value: Canvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
