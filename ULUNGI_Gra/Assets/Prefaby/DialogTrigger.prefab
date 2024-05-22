@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: Hi
+    message: USE A or D to move
   actors:
   - name: Player
     sprite: {fileID: 0}

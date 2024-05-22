@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 828642185083450145}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.15, y: 1.35, z: -9.967185}
+  m_LocalPosition: {x: 3.912, y: -1.062, z: -9.967185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 4092420205772999229}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.58, y: 1.24, z: -9.967185}
+  m_LocalPosition: {x: 0.619, y: -1.043, z: -9.967185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -159,7 +159,7 @@ Transform:
   m_GameObject: {fileID: 5318980421987104099}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.01, y: 0.39, z: 0}
+  m_LocalPosition: {x: 2.416, y: -1.006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -245,7 +245,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!114 &2510261687851573184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,8 +460,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.07338381, y: -0.007307329}
-  - {x: -0.075887404, y: -0.00649534}
+  - {x: 0.02505751, y: -0.0076790713}
+  - {x: -0.04168712, y: -0.007610566}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
