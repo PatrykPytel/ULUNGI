@@ -1,3 +1,0 @@
-System.out.println("dsjoajdo");
-int sum = 4215;
-System.out.println(sum.lenght);
